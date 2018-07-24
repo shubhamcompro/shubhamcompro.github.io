@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#primary-header {
+    margin: 0;
+    padding-top: 10px;
+    background-color: #333545;
+}
+
+#primary-header > div {
+    display: inline-block;
+    min-height: 45px;
+    line-height: 45px;
+    vertical-align: top;
+}
+
+#logo-section,
+#auth-section {
+    width: 11%;
+}
+
+#search-section {
+    width: 75%;
+    padding: 0 0.8%;
+}
+
+#logo-section {
+    text-align: center;
+}
+
+#search-box {
+    width: 98%;
+    padding: 0 0.8%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#primary-nav {
+    width: 100%;
+    border: 1px solid #333545;
+}
+
+#primary-nav > div {
+    display: inline-block;
+}
+
+#navbar-left,
+#navbar-right {
+    width: 48%;
+}
+
+#navbar-right {
+    position: relative;
+    left: 15%;
+}
+
+#navbar-left a {
+    color: white;
+    padding: 0 1.5%;
+}
+
+#navbar-right a {
+    color: rgba(255, 255, 255, .5);
+    padding:0 1%;
+}
+
+#search-box i {
+    width: 2%;
+}
+
+#search-box input {
+    outline: none;
+    border: none;
+    width: 90%;
+    padding-left:1%;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
