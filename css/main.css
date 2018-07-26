@@ -1,10 +1,33 @@
 body {
     margin: 0;
     height: 0;
+    overflow-x: hidden;
+    background-color: rgb(242, 242, 242);
 }
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    border: none;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 5px;
+}
+
+.wrap {
+    padding: 0;
+    margin: 0;
+}
+
+.toggle {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #0078ff;
+    color: white;
 }
 
 #primary-header {
@@ -67,7 +90,7 @@ a {
 
 #navbar-right a {
     color: rgba(255, 255, 255, .5);
-    padding:0 1%;
+    padding: 0 1%;
 }
 
 #search-box i {
@@ -78,17 +101,105 @@ a {
     outline: none;
     border: none;
     width: 90%;
-    padding-left:1%;
+    padding-left: 1%;
 }
 
-@media (min-width: 768px) {
-
+/*Image Slider CSS Start*/
+.slider {
+    position: relative;
+    width: 5142px;
+    height: 35vh;
+    /*animation: img-slider;*/
+    /*animation-duration: 20s;*/
+    /*animation-iteration-count: infinite;*/
 }
 
-@media (min-width: 992px) {
-
+.slider img {
+    float: left;
+    width: 15%;
+    height: auto;
+    padding: 5px 0 5px 5px;
 }
 
-@media (min-width: 1200px) {
+/*@keyframes img-slider {*/
+/*0% {*/
+/*left: 0;*/
+/*}*/
+/*20% {*/
+/*left: -1280px;*/
+/*}*/
+/*40% {*/
+/*left: -2560px;*/
+/*}*/
+/*60% {*/
+/*left: -5142px;*/
+/*}*/
+/*}*/
 
+/*Content  CSS Starts*/
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.widget {
+    margin: 0 40px;
+}
+
+.widget-list h4,
+.widget p {
+    margin: 5px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-heading {
+    margin-bottom: 1px;
+}
+
+.widget-card {
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 1px;
+}
+
+
+.movie-widget-card{
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    margin: 2%;
+}
+
+.movie-widget-list {
+    display: flex;
+    width: 100%;
+}
+
+.movie-widget-card .movie-widget-card-footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: white ;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.movie-widget-card .movie-widget-card-footer h4,
+.movie-widget-card .movie-widget-card-footer p{
+    margin: 0 10%;
+    font-size: 14px;
+}
+
+.movie-widget-card img {
+    width: 100%;
+    height: auto;
 }
