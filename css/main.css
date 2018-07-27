@@ -216,8 +216,8 @@ a {
 .slider {
     background-color: white;
     position: relative;
-    width: 5142px;
-    height: 35vh;
+    width: 400%;
+    height: 40%;
     margin: 10px 0;
 }
 
@@ -239,7 +239,12 @@ a {
 }
 
 .widget {
-    margin: 0 40px;
+    width: 20%;
+    margin: 0 5%;
+}
+
+#movie-widget {
+    width: 70%;
 }
 
 .widget-list h4,
@@ -300,25 +305,52 @@ a {
 
 /*Footer CSS*/
 
-/* Media Queries */
+/* Media Queries Desktop Approach */
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-
+@media (min-width: 776px) and (max-width: 1200px) {
+    #primary-nav {
+        display: none;
+    }
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) {
-
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (max-width: 1200px) {
-    #primary-nav{
+@media (min-width: 708px) and ( max-width: 775px) {
+    #primary-nav {
         display: none;
     }
 
     #logo-section{
-
+        width: 15%;
     }
+
+    #search-section {
+        display: none!important;
+    }
+
+    #auth-section{
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 577px) and ( max-width: 707px) {
+    #primary-nav {
+        display: none;
+    }
+
+    #logo-section{
+        width: 15%;
+    }
+
+    #search-section {
+        display: none!important;
+    }
+
+    #auth-section{
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 320px) and  (max-width: 576px) {
+
 }
