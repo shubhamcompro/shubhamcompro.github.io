@@ -1,3 +1,8 @@
+/*html, body {*/
+    /*position:relative;*/
+    /*overflow-x:hidden;*/
+/*}*/
+
 body {
     margin: 0;
     height: 0;
@@ -328,15 +333,15 @@ a {
 
 /* Media Queries Desktop Approach */
 
-@media (min-width: 776px) and (max-width: 1200px) {
+ @media (min-width: 793px) and (max-width: 1200px) {
     #primary-nav {
-        display: none;
+        display: none!important;
     }
 }
 
-@media (min-width: 708px) and ( max-width: 775px) {
+@media (min-width: 708px) and ( max-width: 792px) {
     #logo-section {
-        width: 15%;
+        width: 18%;
     }
 
     #mobile-header {
@@ -348,15 +353,6 @@ a {
     #auth-section,
     .widget {
         display: none !important;
-    }
-
-    #auth-section {
-        position: absolute;
-        right: 0;
-    }
-
-    #logo-section {
-        width: 25%;
     }
 
     #movie-widget {
@@ -366,16 +362,8 @@ a {
 }
 
 @media (min-width: 727px) and ( max-width: 707px) {
-    #primary-nav {
-        display: none;
-    }
-
     #logo-section {
-        width: 15%;
-    }
-
-    #search-section {
-        display: none !important;
+        width: 24%;
     }
 
     #search-section,
@@ -388,17 +376,9 @@ a {
         display: flex;
     }
 
-    #logo-section {
-        width: 15%;
-    }
-
     #auth-section {
         position: absolute;
         right: 0;
-    }
-
-    #logo-section {
-        width: 25%;
     }
 
     #movie-widget {
@@ -408,17 +388,15 @@ a {
 }
 
 @media (min-width: 320px) and  (max-width: 726px) {
-    #primary-nav {
-        display: none;
-    }
-
     #logo-section {
-        width: 35%;
+        width: 22%;
     }
 
     #search-section,
     #auth-section,
-    .widget {
+    #primary-nav,
+    .widget,
+    .movie-widget-list div:nth-child(3) {
         display: none !important;
     }
 
@@ -426,24 +404,8 @@ a {
         display: flex;
     }
 
-    #logo-section {
-        width: 25%;
-    }
-
     #movie-widget {
         width: 90%;
         margin: 5%;
-    }
-
-    .movie-widget-list div:nth-child(3) {
-        display: none;
-    }
-
-    #search-section {
-        display: none !important;
-    }
-
-    #auth-section {
-        display: none !important;
     }
 }
