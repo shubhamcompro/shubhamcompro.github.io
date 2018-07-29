@@ -365,7 +365,19 @@ a {
     }
 }
 
-@media (min-width: 577px) and ( max-width: 707px) {
+@media (min-width: 727px) and ( max-width: 707px) {
+    #primary-nav {
+        display: none;
+    }
+
+    #logo-section {
+        width: 15%;
+    }
+
+    #search-section {
+        display: none !important;
+    }
+
     #search-section,
     #primary-nav,
     .widget {
@@ -395,7 +407,15 @@ a {
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 320px) and  (max-width: 726px) {
+    #primary-nav {
+        display: none;
+    }
+
+    #logo-section {
+        width: 35%;
+    }
+
     #search-section,
     #auth-section,
     .widget {
@@ -413,5 +433,17 @@ a {
     #movie-widget {
         width: 90%;
         margin: 5%;
+    }
+
+    .movie-widget-list div:nth-child(3) {
+        display: none;
+    }
+
+    #search-section {
+        display: none !important;
+    }
+
+    #auth-section {
+        display: none !important;
     }
 }
