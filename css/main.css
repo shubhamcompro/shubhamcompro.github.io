@@ -266,7 +266,7 @@ a {
 
 .widget {
     width: 20%;
-    margin: 0 5%;
+    margin: 0 4%;
 }
 
 #movie-widget {
@@ -357,7 +357,7 @@ a {
 
     #movie-widget {
         width: 90%;
-        margin: 5%;
+        margin: 0 5%;
     }
 }
 
@@ -383,13 +383,13 @@ a {
 
     #movie-widget {
         width: 90%;
-        margin: 5%;
+        margin: 0 5%;
     }
 }
 
 @media (min-width: 320px) and  (max-width: 726px) {
     #logo-section {
-        width: 22%;
+        width: 25%;
     }
 
     #search-section,
@@ -406,6 +406,14 @@ a {
 
     #movie-widget {
         width: 90%;
-        margin: 5%;
+        margin: 0 5%;
+    }
+
+    #user-menu{
+        width: 75%;
+    }
+
+    .slider{
+        margin: 0;
     }
 }
