@@ -32,6 +32,27 @@ a {
     color: white;
 }
 
+/* Mobile Header */
+#mobile-header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#mobile-header > div {
+    text-align: center;
+    width: 20%;
+    vertical-align: center;
+}
+
 /* Primary Header CSS start*/
 #primary-header {
     -webkit-user-select: none;
@@ -314,43 +335,83 @@ a {
 }
 
 @media (min-width: 708px) and ( max-width: 775px) {
-    #primary-nav {
-        display: none;
-    }
-
-    #logo-section{
+    #logo-section {
         width: 15%;
     }
 
-    #search-section {
-        display: none!important;
+    #mobile-header {
+        display: flex;
     }
 
-    #auth-section{
+    #search-section,
+    #primary-nav,
+    #auth-section,
+    .widget {
+        display: none !important;
+    }
+
+    #auth-section {
         position: absolute;
         right: 0;
+    }
+
+    #logo-section {
+        width: 25%;
+    }
+
+    #movie-widget {
+        width: 90%;
+        margin: 5%;
     }
 }
 
 @media (min-width: 577px) and ( max-width: 707px) {
-    #primary-nav {
-        display: none;
+    #search-section,
+    #primary-nav,
+    .widget {
+        display: none !important;
     }
 
-    #logo-section{
+    #mobile-header {
+        display: flex;
+    }
+
+    #logo-section {
         width: 15%;
     }
 
-    #search-section {
-        display: none!important;
-    }
-
-    #auth-section{
+    #auth-section {
         position: absolute;
         right: 0;
     }
+
+    #logo-section {
+        width: 25%;
+    }
+
+    #movie-widget {
+        width: 90%;
+        margin: 5%;
+    }
 }
 
-@media (min-width: 320px) and  (max-width: 576px) {
+@media (max-width: 576px) {
+    #search-section,
+    #auth-section,
+    .widget {
+        display: none !important;
+    }
 
+    #mobile-header {
+        display: flex;
+    }
+
+    #logo-section {
+        width: 25%;
+    }
+
+    #movie-widget {
+        width: 90%;
+        margin: 5%;
+    }
 }
