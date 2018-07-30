@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 0;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     font-family: Roboto, sans-serif;
     background-color: rgb(242, 242, 242);
     font-size: 14px;
