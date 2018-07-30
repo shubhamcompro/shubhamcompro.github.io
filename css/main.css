@@ -1,3 +1,8 @@
+/*html, body {*/
+    /*position:relative;*/
+    /*overflow-x:hidden;*/
+/*}*/
+
 body {
     margin: 0;
     height: 0;
@@ -30,6 +35,27 @@ a {
 .btn-primary {
     background-color: #0078ff;
     color: white;
+}
+
+/* Mobile Header */
+#mobile-header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#mobile-header > div {
+    text-align: center;
+    width: 20%;
+    vertical-align: center;
 }
 
 /* Primary Header CSS start*/
@@ -240,7 +266,7 @@ a {
 
 .widget {
     width: 20%;
-    margin: 0 5%;
+    margin: 0 4%;
 }
 
 #movie-widget {
@@ -307,78 +333,87 @@ a {
 
 /* Media Queries Desktop Approach */
 
-@media (min-width: 776px) and (max-width: 1200px) {
+ @media (min-width: 793px) and (max-width: 1200px) {
     #primary-nav {
-        display: none;
+        display: none!important;
     }
 }
 
-@media (min-width: 708px) and ( max-width: 775px) {
-    #primary-nav {
-        display: none;
-    }
-
+@media (min-width: 708px) and ( max-width: 792px) {
     #logo-section {
-        width: 15%;
+        width: 18%;
     }
 
-    #search-section {
+    #mobile-header {
+        display: flex;
+    }
+
+    #search-section,
+    #primary-nav,
+    #auth-section,
+    .widget {
         display: none !important;
     }
 
-    #auth-section {
-        position: absolute;
-        right: 0;
+    #movie-widget {
+        width: 90%;
+        margin: 0 5%;
     }
 }
 
 @media (min-width: 727px) and ( max-width: 707px) {
-    #primary-nav {
-        display: none;
-    }
-
     #logo-section {
-        width: 15%;
+        width: 24%;
     }
 
-    #search-section {
+    #search-section,
+    #primary-nav,
+    .widget {
         display: none !important;
+    }
+
+    #mobile-header {
+        display: flex;
     }
 
     #auth-section {
         position: absolute;
         right: 0;
     }
+
+    #movie-widget {
+        width: 90%;
+        margin: 0 5%;
+    }
 }
 
 @media (min-width: 320px) and  (max-width: 726px) {
-    #primary-nav {
-        display: none;
-    }
-
     #logo-section {
-        width: 35%;
+        width: 25%;
     }
 
-    /*.widget {*/
-        /*width: 40%;*/
-        /*margin: auto;*/
-    /*}*/
-
-    /*.movie-widget {*/
-        /*width: 55%;*/
-    /*}*/
-
-    .movie-widget-list div:nth-child(3){
-        display: none;
-    }
-
-
-    #search-section {
+    #search-section,
+    #auth-section,
+    #primary-nav,
+    .widget,
+    .movie-widget-list div:nth-child(3) {
         display: none !important;
     }
 
-    #auth-section {
-        display: none !important;
+    #mobile-header {
+        display: flex;
+    }
+
+    #movie-widget {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #user-menu{
+        width: 75%;
+    }
+
+    .slider{
+        margin: 0;
     }
 }
