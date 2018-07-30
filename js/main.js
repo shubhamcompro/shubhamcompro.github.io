@@ -19,15 +19,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         let userMenu = document.getElementById('user-menu')
             , overlay = document.getElementById('overlay');
 
-        let _ = (userMenu.style.display === 'block' ? enableScrolling() : disableScrolling());
+        const _ = (userMenu.style.display === 'block' ? enableScrolling() : disableScrolling());
         overlay.style.display = (userMenu.style.display === 'block' ? 'none' : 'block');
         userMenu.style.display = (userMenu.style.display === 'block' ? 'none' : 'block');
     }
 
-    let toogleBtn = document.getElementById('toggle'),
+    let toggleBtns = document.getElementsByClassName('toggle'),
         overlay = document.getElementById('overlay');
 
-    toogleBtn.addEventListener('click', cb);
+    toggleBtns[0].addEventListener('click',cb);
+    toggleBtns[1].addEventListener('click', cb);
     overlay.addEventListener('click', cb);
 });
 

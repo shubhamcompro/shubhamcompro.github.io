@@ -1,13 +1,8 @@
-/*html, body {*/
-    /*position:relative;*/
-    /*overflow-x:hidden;*/
-/*}*/
-
 body {
     margin: 0;
     height: 0;
-    font-family: Roboto, sans-serif;
     overflow-x: hidden;
+    font-family: Roboto, sans-serif;
     background-color: rgb(242, 242, 242);
     font-size: 14px;
 }
@@ -28,20 +23,17 @@ a {
     margin: 0;
 }
 
-.toggle {
-    color: white;
-}
-
 .btn-primary {
     background-color: #0078ff;
     color: white;
 }
 
 /* Mobile Header */
+
 #mobile-header {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     display: none;
     background-color: white;
     flex-direction: row;
@@ -55,10 +47,10 @@ a {
 #mobile-header > div {
     text-align: center;
     width: 20%;
-    vertical-align: center;
 }
 
 /* Primary Header CSS start*/
+
 #primary-header {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -143,6 +135,7 @@ a {
 
 /* Primary Header CSS ends*/
 
+
 /* Aside and Overlay CSS start*/
 
 #overlay {
@@ -161,10 +154,11 @@ a {
 #user-menu {
     display: none;
     background-color: white;
-    position: absolute;
+    position: fixed;
     width: 25%;
     height: 100vh;
     right: 0;
+    bottom: 0;
     z-index: 3;
     transition: visibility 0s, opacity 0.5s linear;
 }
@@ -235,8 +229,8 @@ a {
 #user-menu ul li a:hover {
     background-color: #D5D8DC;
 }
+/* User Menu CSS ends*/
 
-/* User Menu CSS start*/
 
 /*Image Slider CSS Start*/
 .slider {
